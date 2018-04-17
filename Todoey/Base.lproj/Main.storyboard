@@ -32,11 +32,27 @@
                             <outlet property="delegate" destination="ffl-hv-Wew" id="Iyd-fH-wEM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="Iao-WI-x9i"/>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="JBI-Gx-AKi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem systemItem="add" id="yqV-vt-clz">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Todoey" id="Iao-WI-x9i">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DhZ-KQ-oAB">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="ffl-hv-Wew" id="ek6-8M-31Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJX-Rf-oZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="152"/>
+            <point key="canvasLocation" x="-1138" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XTP-fS-Jw7">
@@ -58,7 +74,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPy-xH-Emh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-326" y="152"/>
+            <point key="canvasLocation" x="-1791" y="19"/>
         </scene>
     </scenes>
 </document>
